@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="mysheet.css">
+	<title>The Product</title>
+	<script>
+		
+		function showPrice() {
+			var product = document.getElementById("Product").value;
+			var price;
+
+			if (product == "Nba 2k25 Standered Edition") {
+				price = "$60";
+			} else if (product == "Nba 2k25 Deluxe Edition") {
+				price = "$80";
+			} else if (product == "Nba 2k25 Exclusive Edition") {
+				price = "$100";
+			} else if (product == "God of war ragnarok Standered Edition") {
+				price = "$70";
+			} else if (product == "God of war ragnarok Deluxe Edition") {
+				price = "$90";
+			} else if (product == "God of war ragnarok Exclusive Edition") {
+				price = "$110";
+			} else if (product == "call of duty Standered Edition") {
+				price = "$60";
+			} else if (product == "call of duty Deluxe Edition") {
+				price = "$80";
+			} else if (product == "call of duty Exclusive Edition") {
+				price = "$100";
+			} else if (product == "Uncharted 4 Standered Edition") {
+				price = "$60";
+			} else if (product == "Uncharted 4 Deluxe Edition") {
+				price = "$80";
+			} else if (product == "Uncharted 4 Exclusive Edition") {
+				price = "$100";
+			} else {
+				price = "Please select a product.";
+			}
+
+			
+			document.getElementById("priceDisplay").innerHTML = "Price: " + price;
+		}
+
+		function submitProduct() {
+			alert('Thanks for choosing and working with us');
+		}
+	</script>
+</head>
+<body>
+	<h1>List of Products</h1>
+	<hr/>
+	<p>Here is a list of our games that are available to buy online:</p>
+
+	<table>
+		<tr>
+			<td><img src="th.jfif" width="120" height="170"> <br> nba2k25
+				<ul>
+					<li>Standard Edition 60$</li> 
+					<li>Deluxe Edition 80$</li> 
+					<li>Exclusive Edition 100$</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td><img src="download (1).jfif" width="120" height="170"> <br> God of War Ragnarok
+				<ul>
+					<li>Standard Edition 70$</li> 
+					<li>Deluxe Edition 90$</li> 
+					<li>Exclusive Edition 110$</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td><img src="OIP (1).jfif" width="120" height="150"> <br> Call of Duty
+				<ul>
+					<li>Standard Edition 60$</li> 
+					<li>Deluxe Edition 80$</li> 
+					<li>Exclusive Edition 100$</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td><img src="uncharted-4-ps5-retro.jpg" width="120" height="170"> <br> Uncharted 4
+				<ul>
+					<li>Standard Edition 60$</li> 
+					<li>Deluxe Edition 80$</li> 
+					<li>Exclusive Edition 100$</li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+
+	<label for="Product" style="font-size: 175%">Choose a Product: </label>
+	<select id="Product" name="Product" onchange="showPrice()">
+		<option value="Nba 2k25 Standered Edition">NBA 2K25 Standard Edition</option>
+		<option value="Nba 2k25 Deluxe Edition">NBA 2K25 Deluxe Edition</option>
+		<option value="Nba 2k25 Exclusive Edition">NBA 2K25 Exclusive Edition</option>
+		<option value="God of war ragnarok Standered Edition">God of War Ragnarok Standard Edition</option>
+		<option value="God of war ragnarok Deluxe Edition">God of War Ragnarok Deluxe Edition</option>
+		<option value="God of war ragnarok Exclusive Edition">God of War Ragnarok Exclusive Edition</option>
+		<option value="call of duty Standered Edition">Call of Duty Standard Edition</option>
+		<option value="call of duty Deluxe Edition">Call of Duty Deluxe Edition</option>
+		<option value="call of duty Exclusive Edition">Call of Duty Exclusive Edition</option>
+		<option value="Uncharted 4 Standered Edition">Uncharted 4 Standard Edition</option>
+		<option value="Uncharted 4 Deluxe Edition">Uncharted 4 Deluxe Edition</option>
+		<option value="Uncharted 4 Exclusive Edition">Uncharted 4 Exclusive Edition</option>
+	</select>
+
+	
+	<div id="priceDisplay" style="margin-top: 10px; font-size: 20px; font-weight: bold;"></div>
+
+	<br><br>
+	<button type="button" onclick="submitProduct()">Submit</button>
+
+	<hr/>
+	<h2> About me / contact me</h2>
+	<br>
+	<a href="aboutme.html">
+		<p> About me</p>
+		<a href="contactme.html">
+			<p>contact me</p>
+	</a>
+</body>
+</html>
